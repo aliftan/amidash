@@ -1,0 +1,361 @@
+<!DOCTYPE html> 
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Amitas | Dashboard</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/bulma.css">
+      <link rel="stylesheet" href="css/bulma_ext.css">
+      <script type="text/javascript" src="js/app.js"></script>
+   </head>
+   <body>
+      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+         <div class="container">
+         <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+            <img src="img/amitas_logo.svg" alt="Logo" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navMenu">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+         <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+               <a class="navbar-item" href="index.html">
+               Users
+               </a>
+               <a class="navbar-item" href="threads.html">
+               Threads
+               </a>
+               <a class="navbar-item" href="groups.html">
+               Groups
+               </a>
+               <a class="navbar-item is-active" href="tags.html">
+               Tags
+               </a>
+            </div>
+            <div class="navbar-end">
+               <!-- my account -->
+               <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link" target="_blank">
+                  My Account
+                  </a>
+                  <div class="navbar-dropdown is-boxed">
+                     <a class="navbar-item" href="profile.html">My Profile</a>
+                     <hr class="navbar-divider">
+                     <a class="navbar-item" href="login.html">Logout</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <section class="section">
+         <div class="container">
+            <div class="columns">
+               <div class="column is-one-third is-left">
+                  <h1 class="title">5 Tags</h1>
+               </div>
+               <div class="column">
+                  <div class="field is-grouped is-grouped-right">
+                     <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Search">
+                        <span class="icon is-left">
+                        <i class="fa fa-search"></i>
+                        </span>                
+                     </p>
+                     <p class="control">
+                        <a class="button is-success modal-button" data-target="modal-ad">
+                        <span class="icon">
+                        <i class="fa fa-plus"></i>
+                        </span>
+                        <span>New Tag</span>
+                        </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="column">
+               <div class="box">
+                  <div class="content">
+                     <table class="table is-striped is-hoverable">
+                        <thead>
+                           <tr>
+                              <th>Id</th>
+                              <th>Tag Name</th>
+                              <th>Tag Color</th>
+                              <th>Action</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>1</td>
+                              <td>Kampus</td>
+                              <td>#9564d1</td>
+                              <td>
+                                 <div class="field">
+                                    <a class="button modal-button" data-target="modal-vw">
+                                    <span class="icon">
+                                    <i class="fa fa-eye"></i>
+                                    </span>
+                                    <span>View</span>
+                                    </a>
+                                    <a class="button is-info modal-button" data-target="modal-ed">
+                                    <span class="icon">
+                                    <i class="fa fa-pencil"></i>
+                                    </span>
+                                    <span>Edit</span>
+                                    </a>
+                                    <a class="button is-danger modal-button" data-target="modal-dl">
+                                    <span class="icon">
+                                    <i class="fa fa-trash"></i>
+                                    </span>
+                                    <span>Delete</span>
+                                    </a>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>2</td>
+                              <td>Acara</td>
+                              <td>#EBAB55</td>
+                              <td>
+                                 <div class="field">
+                                    <a class="button modal-button" data-target="modal-vw">
+                                    <span class="icon">
+                                    <i class="fa fa-eye"></i>
+                                    </span>
+                                    <span>View</span>
+                                    </a>
+                                    <a class="button is-info modal-button" data-target="modal-ed">
+                                    <span class="icon">
+                                    <i class="fa fa-pencil"></i>
+                                    </span>
+                                    <span>Edit</span>
+                                    </a>
+                                    <a class="button is-danger modal-button" data-target="modal-dl">
+                                    <span class="icon">
+                                    <i class="fa fa-trash"></i>
+                                    </span>
+                                    <span>Delete</span>
+                                    </a>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>3</td>
+                              <td>Seminar</td>
+                              <td>#7D94B2</td>
+                              <td>
+                                 <div class="field">
+                                    <a class="button modal-button" data-target="modal-vw">
+                                    <span class="icon">
+                                    <i class="fa fa-eye"></i>
+                                    </span>
+                                    <span>View</span>
+                                    </a>
+                                    <a class="button is-info modal-button" data-target="modal-ed">
+                                    <span class="icon">
+                                    <i class="fa fa-pencil"></i>
+                                    </span>
+                                    <span>Edit</span>
+                                    </a>
+                                    <a class="button is-danger modal-button" data-target="modal-dl">
+                                    <span class="icon">
+                                    <i class="fa fa-trash"></i>
+                                    </span>
+                                    <span>Delete</span>
+                                    </a>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>4</td>
+                              <td>Fasilitas</td>
+                              <td>#E45453</td>
+                              <td>
+                                 <div class="field">
+                                    <a class="button modal-button" data-target="modal-vw">
+                                    <span class="icon">
+                                    <i class="fa fa-eye"></i>
+                                    </span>
+                                    <span>View</span>
+                                    </a>
+                                    <a class="button is-info modal-button" data-target="modal-ed">
+                                    <span class="icon">
+                                    <i class="fa fa-pencil"></i>
+                                    </span>
+                                    <span>Edit</span>
+                                    </a>
+                                    <a class="button is-danger modal-button" data-target="modal-dl">
+                                    <span class="icon">
+                                    <i class="fa fa-trash"></i>
+                                    </span>
+                                    <span>Delete</span>
+                                    </a>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>5</td>
+                              <td>Lowongan</td>
+                              <td>#5AC169</td>
+                              <td>
+                                 <div class="field">
+                                    <a class="button modal-button" data-target="modal-vw">
+                                    <span class="icon">
+                                    <i class="fa fa-eye"></i>
+                                    </span>
+                                    <span>View</span>
+                                    </a>
+                                    <a class="button is-info modal-button" data-target="modal-ed">
+                                    <span class="icon">
+                                    <i class="fa fa-pencil"></i>
+                                    </span>
+                                    <span>Edit</span>
+                                    </a>
+                                    <a class="button is-danger modal-button" data-target="modal-dl">
+                                    <span class="icon">
+                                    <i class="fa fa-trash"></i>
+                                    </span>
+                                    <span>Delete</span>
+                                    </a>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- modal add -->
+      <div id="modal-ad" class="modal">
+         <div class="modal-background"></div>
+         <div class="modal-card">
+            <header class="modal-card-head">
+               <p class="modal-card-title">Add New Tag</p>
+               <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+               <div class="content">                  
+                  <div class="field">
+                     <label class="label">Id</label>
+                     <div class="control">                        
+                        <input class="input" type="text" placeholder="Input id">
+                     </div>
+                  </div>
+                  <div class="field">
+                     <label class="label">Tag Name</label>
+                     <div class="control">
+                        <input class="input" type="text" placeholder="Input tag name">
+                     </div>
+                  </div>
+                  <div class="field">
+                     <label class="label">Tag Color</label>
+                     <div class="control">
+                        <input class="input" type="text" placeholder="Input tag color">
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <footer class="modal-card-foot">
+               <button class="button is-success">Submit</button>
+               <button class="button">Cancel</button>
+            </footer>
+         </div>
+      </div>
+      <!-- modal view -->
+      <div id="modal-vw" class="modal">
+         <div class="modal-background"></div>
+         <div class="modal-card">
+            <header class="modal-card-head">
+               <p class="modal-card-title">Detail Tag</p>
+               <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">               
+               <div class="content">
+                  <div class="field">
+                     <label class="label">Id</label>
+                     <div class="control">
+                        <input class="input" type="text" value="1" readonly>
+                     </div>
+                  </div>
+                  <div class="field">
+                     <label class="label">Tag Name</label>
+                     <div class="control">
+                        <input class="input" type="text" value="Kampus" readonly>
+                     </div>
+                  </div>
+                  <div class="field">
+                     <label class="label">Tag Color</label>
+                     <div class="control">
+                        <input class="input" type="text" value="#9564d1" readonly>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <footer class="modal-card-foot">
+               <button class="button">Go Back</button>
+            </footer>
+         </div>
+      </div>
+      <!-- modal edit -->
+      <div id="modal-ed" class="modal">
+         <div class="modal-background"></div>
+         <div class="modal-card">
+            <header class="modal-card-head">
+               <p class="modal-card-title">Edit Tag</p>
+               <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+               <div class="content">                  
+                  <div class="field">
+                     <label class="label">Id</label>
+                     <div class="control">                        
+                        <input class="input" type="text" placeholder="Text input" value="1">
+                     </div>
+                  </div>
+                  <div class="field">
+                     <label class="label">Tag Name</label>
+                     <div class="control">
+                        <input class="input" type="text" placeholder="Text input" value="Kampus">
+                     </div>
+                  </div>
+                  <div class="field">
+                     <label class="label">Tag Color</label>
+                     <div class="control">
+                        <input class="input" type="text" placeholder="Text input" value="#9564d1">
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <footer class="modal-card-foot">
+               <button class="button is-success">Update</button>
+               <button class="button">Cancel</button>
+            </footer>
+         </div>
+      </div>
+      <!-- modal delete -->
+      <div id="modal-dl" class="modal">
+         <div class="modal-background"></div>
+         <div class="modal-card">
+            <header class="modal-card-head">
+               <p class="modal-card-title">Delete Tag</p>
+               <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+               <p class="subtitle is-6">Are you sure that you want to delete this Tag?</p>
+            </section>
+            <footer class="modal-card-foot">
+               <button class="button is-danger">Delete Now</button>
+               <button class="button">Cancel</button>
+            </footer>
+         </div>
+      </div>
+   </body>
+</html>
