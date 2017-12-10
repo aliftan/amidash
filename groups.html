@@ -57,7 +57,7 @@
          <div class="container">
             <div class="columns">
                <div class="column is-one-third is-left">
-                  <h1 class="title">2 Groups</h1>
+                  <h1 class="title">1 Groups</h1>
                </div>
                <div class="column">
                   <div class="field is-grouped is-grouped-right">
@@ -93,48 +93,13 @@
                               <td>24</td>
                               <td>
                                  <div class="field">
-                                    <a class="button modal-button" data-target="modal-vw">
+                                    <a href="group_detail.html" class="button">
                                     <span class="icon">
                                     <i class="fa fa-eye"></i>
                                     </span>
                                     <span>View</span>
                                     </a>
-                                    <a class="button is-info modal-button" data-target="modal-ed">
-                                    <span class="icon">
-                                    <i class="fa fa-pencil"></i>
-                                    </span>
-                                    <span>Edit</span>
-                                    </a>
-                                    <a class="button is-danger modal-button" data-target="modal-dl">
-                                    <span class="icon">
-                                    <i class="fa fa-trash"></i>
-                                    </span>
-                                    <span>Delete</span>
-                                    </a>
-                                 </div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>17002</td>
-                              <td>Ubuntu Yogyakarta</td>
-                              <td>2017-10-24</td>
-                              <td>Dinu Rifai</td>
-                              <td>12</td>
-                              <td>
-                                 <div class="field">
-                                    <a class="button modal-button" data-target="modal-vw">
-                                    <span class="icon">
-                                    <i class="fa fa-eye"></i>
-                                    </span>
-                                    <span>View</span>
-                                    </a>
-                                    <a class="button is-info modal-button" data-target="modal-ed">
-                                    <span class="icon">
-                                    <i class="fa fa-pencil"></i>
-                                    </span>
-                                    <span>Edit</span>
-                                    </a>
-                                    <a class="button is-danger modal-button" data-target="modal-dl">
+                                    <a href="group_delete.html" class="button is-danger">
                                     <span class="icon">
                                     <i class="fa fa-trash"></i>
                                     </span>
@@ -150,171 +115,5 @@
             </div>
          </div>
       </section>
-      <!-- modal view -->
-      <div id="modal-vw" class="modal">
-         <div class="modal-background"></div>
-         <div class="modal-card">
-            <header class="modal-card-head">
-               <p class="modal-card-title">Detail Groups</p>
-               <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-               <div class="field">
-                  <div class="control">
-                     <label class="label">Group Photo</label>
-                     <figure class="image is-96x96">
-                        <img src="https://i.imgur.com/E7bqjet.png">
-                     </figure>
-                  </div>
-               </div>
-               <div class="content">
-                  <div class="field">
-                     <label class="label">Group Name</label>
-                     <div class="control">
-                        <input class="input" type="text" value="Ubuntu Linux Indonesia" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Admin Name</label>
-                     <div class="control">
-                        <input class="input" type="text" value="Alif Tan" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Created On</label>
-                     <div class="control">
-                        <input class="input" type="text" value="2017-10-24" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Total Member</label>
-                     <div class="control">
-                        <input class="input" type="text" value="24" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">About</label>
-                     <div class="control">
-                        <textarea class="textarea" placeholder="Write Content.." rows="3">Linux ubuntu sebagai media semangat dalam dunia software
-                        </textarea>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Website Link</label>
-                     <div class="control">
-                        <input class="input" type="text" value="http://amicloud.me" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Social Link</label>
-                     <div class="control">
-                        <input class="input" type="text" value="https://www.facebook.com/tupai.newbie" readonly>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <footer class="modal-card-foot">
-               <button class="button">Go Back</button>
-            </footer>
-         </div>
-      </div>
-      <!-- modal edit -->
-      <div id="modal-ed" class="modal">
-         <div class="modal-background"></div>
-         <div class="modal-card">
-            <header class="modal-card-head">
-               <p class="modal-card-title">Edit Group</p>
-               <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-               <div class="field">
-                  <div class="control">
-                     <label class="label">Group Photo</label>
-                     <figure class="image is-96x96">
-                        <img src="https://i.imgur.com/E7bqjet.png">
-                     </figure>
-                  </div>
-               </div>
-               <div class="content">
-                  <div class="field">
-                     <div class="control">
-                        <div class="file has-name is-fullwidth">
-                           <label class="file-label">
-                           <input class="file-input" type="file" name="resume">
-                           <span class="file-cta">
-                           <span class="file-icon">
-                           <i class="fa fa-upload"></i>
-                           </span>
-                           <span class="file-label">1
-                           Choose a photo…
-                           </span>
-                           </span>
-                           <span class="file-name">https://i.imgur.com/E7bqjet.png
-                           </span>
-                           </label>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Group Name</label>
-                     <div class="control">                        
-                        <input class="input" type="text" placeholder="Text input" value="Ubuntu Linux Indonesia">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Admin Name</label>
-                     <div class="control">                        
-                        <input class="input" type="text" placeholder="Text input" value="Alif Tan">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Total Member</label>
-                     <div class="control">                        
-                        <input class="input" type="text" placeholder="Text input" value="24">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">About</label>
-                     <div class="control">
-                        <textarea class="textarea" placeholder="Write Content.." rows="5">Linux ubuntu sebagai media semangat dalam dunia software</textarea>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Website Link</label>
-                     <div class="control">                        
-                        <input class="input" type="text" placeholder="Text input" value="http://amicloud.me">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Social Link</label>
-                     <div class="control">                        
-                        <input class="input" type="text" placeholder="Text input" value="https://www.facebook.com/tupai.newbie">
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <footer class="modal-card-foot">
-               <button class="button is-success">Update</button>
-               <button class="button">Cancel</button>
-            </footer>
-         </div>
-      </div>
-      <!-- modal delete -->
-      <div id="modal-dl" class="modal">
-         <div class="modal-background"></div>
-         <div class="modal-card">
-            <header class="modal-card-head">
-               <p class="modal-card-title">Delete Group</p>
-               <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-               <p class="subtitle is-6">Are you sure that you want to delete this Group?</p>
-            </section>
-            <footer class="modal-card-foot">
-               <button class="button is-danger">Delete Now</button>
-               <button class="button">Cancel</button>
-            </footer>
-         </div>
-      </div>
    </body>
 </html>

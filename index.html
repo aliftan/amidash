@@ -57,7 +57,7 @@
          <div class="container">
             <div class="columns">
                <div class="column is-one-third is-left">
-                  <h1 class="title">2 User</h1>
+                  <h1 class="title">1 User</h1>
                </div>
                <div class="column">
                   <div class="field is-grouped is-grouped-right">
@@ -68,7 +68,7 @@
                         </span>                
                      </p>
                      <p class="control">
-                        <a class="button is-success modal-button" data-target="modal-ad">
+                        <a href="user_add.html" class="button is-success">
                         <span class="icon">
                         <i class="fa fa-plus"></i>
                         </span>
@@ -101,48 +101,19 @@
                               <td>2017-10-24</td>
                               <td>
                                  <div class="field">
-                                    <a class="button modal-button" data-target="modal-vw">
+                                    <a href="user_detail.html" class="button modal-button">
                                     <span class="icon">
                                     <i class="fa fa-eye"></i>
                                     </span>
                                     <span>View</span>
                                     </a>
-                                    <a class="button is-info modal-button" data-target="modal-ed">
+                                    <a href="user_edit.html" class="button is-info modal-button">
                                     <span class="icon">
                                     <i class="fa fa-pencil"></i>
                                     </span>
                                     <span>Edit</span>
                                     </a>
-                                    <a class="button is-danger modal-button" data-target="modal-dl">
-                                    <span class="icon">
-                                    <i class="fa fa-trash"></i>
-                                    </span>
-                                    <span>Delete</span>
-                                    </a>
-                                 </div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>15118735</td>
-                              <td>Alif Tan</td>
-                              <td>Tekhnik Informatika</td>
-                              <td>Ukm</td>
-                              <td>2017-10-24</td>
-                              <td>
-                                 <div class="field">
-                                    <a class="button modal-button" data-target="modal-vw">
-                                    <span class="icon">
-                                    <i class="fa fa-eye"></i>
-                                    </span>
-                                    <span>View</span>
-                                    </a>
-                                    <a class="button is-info modal-button" data-target="modal-ed">
-                                    <span class="icon">
-                                    <i class="fa fa-pencil"></i>
-                                    </span>
-                                    <span>Edit</span>
-                                    </a>
-                                    <a class="button is-danger modal-button" data-target="modal-dl">
+                                    <a href="user_delete.html" class="button is-danger modal-button">
                                     <span class="icon">
                                     <i class="fa fa-trash"></i>
                                     </span>
@@ -158,251 +129,6 @@
             </div>
          </div>
       </section>
-      <!-- modal add -->
-      <div id="modal-ad" class="modal">
-         <div class="modal-background"></div>
-         <div class="modal-card">
-            <header class="modal-card-head">
-               <p class="modal-card-title">Add New User</p>
-               <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-               <div class="content">
-                  <div class="field">
-                     <div class="control">
-                        <label class="label">Profile Photo</label>
-                        <div class="file has-name is-fullwidth">
-                           <label class="file-label">
-                           <input class="file-input" type="file" name="resume">
-                           <span class="file-cta">
-                           <span class="file-icon">
-                           <i class="fa fa-upload"></i>
-                           </span>
-                           <span class="file-label">
-                           Choose a photo…
-                           </span>
-                           </span>
-                           <span class="file-name"></span>
-                           </label>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Id</label>
-                     <div class="control">                        
-                        <input class="input" type="text" placeholder="Input id">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Password</label>
-                     <div class="control">
-                        <input class="input" type="password" placeholder="Input password">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Nama</label>
-                     <div class="control">
-                        <input class="input" type="text" placeholder="Input Nama">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Role</label>
-                     <div class="select is-fullwidth">
-                        <select>
-                           <option is-selected>-- Select Role --</option>
-                           <option>Member</option>
-                           <option>Ukm</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Prodi</label>
-                     <div class="select is-fullwidth">
-                        <select>
-                           <option is-selected>-- Select Prodi --</option>
-                           <option>Tekhnik Informatika</option>
-                           <option>Sistem Informasi</option>
-                           <option>Manajemen Informatika</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Join Date</label>
-                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Social Link</label>
-                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input">
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <footer class="modal-card-foot">
-               <button class="button is-success">Submit</button>
-               <button class="button">Cancel</button>
-            </footer>
-         </div>
-      </div>
-      <!-- modal view -->
-      <div id="modal-vw" class="modal">
-         <div class="modal-background"></div>
-         <div class="modal-card">
-            <header class="modal-card-head">
-               <p class="modal-card-title">Detail User</p>
-               <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-               <div class="field">
-                  <div class="control">
-                     <label class="label">Profile Photo</label>
-                     <figure class="image is-96x96">
-                        <img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/3849/s300/will-shandling.jpg">
-                     </figure>
-                  </div>
-               </div>
-               <div class="content">
-                  <div class="field">
-                     <label class="label">Id</label>
-                     <div class="control">
-                        <input class="input" type="text" value="15118735" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Password</label>
-                     <div class="control">
-                        <input class="input" type="text" value="2312SDSA" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Nama</label>
-                     <div class="control">
-                        <input class="input" type="text" value="Alif Tan" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Role</label>
-                     <div class="control">
-                        <input class="input" type="text" value="Member" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Prodi</label>
-                     <div class="control">
-                        <input class="input" type="text" value="Tekhnik Informatika" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Join Date</label>
-                     <div class="control">
-                        <input class="input" type="text" value="2017-10-24" readonly>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Social Link</label>
-                     <div class="control">
-                        <input class="input" type="text" value="https://www.facebook.com/tupai.newbie" readonly>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <footer class="modal-card-foot">
-               <button class="button">Go Back</button>
-            </footer>
-         </div>
-      </div>
-      <!-- modal edit -->
-      <div id="modal-ed" class="modal">
-         <div class="modal-background"></div>
-         <div class="modal-card">
-            <header class="modal-card-head">
-               <p class="modal-card-title">Edit User</p>
-               <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-               <div class="content">
-                  <div class="field">
-                     <div class="control">
-                        <label class="label">Profile Photo</label>
-                        <div class="file has-name is-fullwidth">
-                           <label class="file-label">
-                           <input class="file-input" type="file" name="resume">
-                           <span class="file-cta">
-                           <span class="file-icon">
-                           <i class="fa fa-upload"></i>
-                           </span>
-                           <span class="file-label">
-                           Choose a photo…
-                           </span>
-                           </span>
-                           <span class="file-name">
-                           Screen Shot 2017-07-29 at 15.54.25.png
-                           </span>
-                           </label>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Id</label>
-                     <div class="control">                        
-                        <input class="input" type="text" placeholder="Text input" value="15118735">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Password</label>
-                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input" value="2312SDSA">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Nama</label>
-                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input" value="Alif Tan">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Role</label>
-                     <div class="control">
-                        <div class="select is-fullwidth">
-                           <select>
-                              <option selected>Member</option>
-                              <option>Ukm</option>
-                           </select>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Prodi</label>
-                     <div class="select is-fullwidth">
-                        <select>
-                           <option selected>Tekhnik Informatika</option>
-                           <option>Sistem Informasi</option>
-                           <option>Manajemen Informatika</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Join Date</label>
-                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input" value="2017-10-24">
-                     </div>
-                  </div>
-                  <div class="field">
-                     <label class="label">Social Link</label>
-                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input" value="https://www.facebook.com/tupai.newbie">
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <footer class="modal-card-foot">
-               <button class="button is-success">Update</button>
-               <button class="button">Cancel</button>
-            </footer>
-         </div>
-      </div>
       <!-- modal delete -->
       <div id="modal-dl" class="modal">
          <div class="modal-background"></div>
