@@ -25,13 +25,13 @@
          </div>
          <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
-               <a class="navbar-item is-active" href="index.html">
+               <a class="navbar-item" href="index.html">
                Users
                </a>
                <a class="navbar-item" href="threads.html">
                Threads
                </a>
-               <a class="navbar-item" href="groups.html">
+               <a class="navbar-item is-active" href="groups.html">
                Groups
                </a>
                <a class="navbar-item" href="tags.html">
@@ -58,41 +58,59 @@
             <div class="column">
                <nav class="breadcrumb" aria-label="breadcrumbs">
                   <ul>
-                     <li><a href="index.html">Users</a></li>
-                     <li class="is-active"><a href="#" aria-current="page">Detail User</a></li>
+                     <li><a href="groups.html">Groups</a></li>
+                     <li class="is-active"><a href="#" aria-current="page">Detail Group</a></li>
                   </ul>
                </nav>
                <!-- form -->
                <div class="box">
-                  <p class="title is-3">Detail User</p>
+                  <p class="title is-3">Detail Group</p>
                   <div class="field">
                      <div class="control">
-                        <label class="label">Profile Photo</label>
+                        <label class="label">Group Photo</label>
                         <figure class="image is-96x96">
-                           <img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/3849/s300/will-shandling.jpg">
+                           <img src="https://i.imgur.com/E7bqjet.png">
                         </figure>
                      </div>
                   </div>
                   <div class="content">
                      <div class="field">
-                        <label class="label">Name</label>
+                        <label class="label">Group Name</label>
                         <div class="control has-icons-left">           
-                           <input class="input" type="text" value="Alif Tan" readonly>
+                           <input class="input" type="text" value="Ubuntu Linux Indonesia" readonly>
                            <span class="icon is-small is-left">
-                           <i class="fa fa-user"></i>
+                           <i class="fa fa-users"></i>
                            </span>
                         </div>
                      </div>
                      <div class="field">
-                        <label class="label">Prodi</label>
-                        <div class="control">           
-                           <input class="input" type="text" value="Tekhnik Informatika" readonly>               
+                        <label class="label">Admin Name</label>
+                        <div class="control has-icons-left">           
+                           <input class="input" type="text" value="Alif Tan" readonly>    
+                           <span class="icon is-small is-left">
+                           <i class="fa fa-user"></i>
+                           </span>           
                         </div>
                      </div>
                      <div class="field">
-                        <label class="label">Role</label>
+                        <label class="label">Total Member</label>
                         <div class="control">           
-                           <input class="input" type="text" value="Member" readonly>               
+                           <input class="input" type="text" value="24" readonly>               
+                        </div>
+                     </div>
+                     <div class="field">
+                        <label class="label">Created Date</label>
+                        <div class="control has-icons-left">           
+                           <input class="input" type="text" value="2017-10-24" readonly>
+                           <span class="icon is-small is-left">
+                           <i class="fa fa-calendar"></i>
+                           </span>               
+                        </div>
+                     </div>
+                     <div class="field">
+                        <label class="label">Group Info</label>
+                        <div class="control">           
+                           <textarea class="textarea" readonly="">Ubuntu linux indonesia adalah group linux yang khusus mempelajari seputar distro ubuntu.</textarea>         
                         </div>
                      </div>
                      <div class="field">
@@ -104,36 +122,13 @@
                            </span>
                         </div>
                      </div>
-                     <div class="field">
-                        <label class="label">Password</label>
-                        <div class="control has-icons-left">           
-                           <input class="input" type="text" value="12345" readonly>
-                           <span class="icon is-small is-left">
-                           <i class="fa fa-lock"></i>
-                           </span>
-                        </div>
-                     </div>
-                     <div class="field">
-                        <label class="label">Confirm Password</label>
-                        <div class="control has-icons-left">           
-                           <input class="input" type="text" value="12345" readonly>
-                           <span class="icon is-small is-left">
-                           <i class="fa fa-lock"></i>
-                           </span>
-                        </div>
-                     </div>
                      <br>
                      <div class="field is-grouped">
                         <div class="control">
-                           <a href="user_edit.html" class="button is-info">
-                           <span class="icon">
-                           <i class="fa fa-pencil"></i>
-                           </span>
-                           <span>Edit</span>
-                           </a>
-                        </div>
-                        <div class="control">
-                           <a href="index.html" class="button">
+                           <a href="groups.html" class="button">
+                               <span class="icon">
+                                 <i class="fa fa-angle-left"></i>
+                               </span>
                            <span>Go Back</span>
                            </a>
                         </div>
